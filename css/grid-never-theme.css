@@ -1,0 +1,407 @@
+/* main classes */
+
+* {
+    box-sizing: border-box; /* to prevent padding-marging effects */
+    word-break: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+h4 {
+	font-size: 15px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+h5 {
+	font-size: 14px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+h6 {
+	font-size: 14px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    margin: 10px 10px 10px 0px;
+}
+
+.alignleft {
+    float: left;
+}
+
+
+/* structure */
+
+.wrapper {
+	width: 80%;
+	min-width: 1024px;
+	margin: 0 auto;
+}
+
+
+.container {
+	display:table;
+}
+
+.content {
+	display: block;
+	width: auto;
+}
+
+.content-grid {
+	column-count: 4;
+}
+
+/* articles */
+
+.entry {
+	display: table;
+	width: 100%;
+	margin: 0px 20px 20px 0px;
+	padding: 10px;
+	min-height: 200px;
+	height: 200px;
+	background: #b9b9b9;
+	border: none;
+	box-shadow: 1px 1px #8a8b8b;
+	position: relative;
+}
+
+.entry-dark-blue {
+	background: #2a6774;
+}
+
+.entry-light-blue {
+	background: #49aabf;
+}
+
+.entry-yellow {
+	background: #eacf2c;
+}
+
+
+.entry:hover {
+	background: #3b3c4b;
+}
+
+.entry h2 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.entry h2 > a, .entry h2 > a:active, .entry h2 > a:visited {
+	color: #ffffff;
+	text-decoration: none
+}
+
+.entry h2 > a:hover {
+	color: #ffffff;
+	text-decoration: none
+}
+
+.entry > div.postmetadata {
+	color: #666666;
+	position: absolute;
+	bottom: 0px;
+	font-size: 14px;
+
+}
+
+.entry > div.postmetadata a,
+.entry > div.postmetadata a:active,
+.entry > div.postmetadata a:visited  {
+	color: #666666;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+.entry > div.postmetadata a:hover  {
+	color: #999999;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+.entry-dark-blue > div.postmetadata {
+	color: #aaaaaa;
+	position: absolute;
+	bottom: 0px;
+	font-size: 14px;
+
+}
+
+.entry-dark-blue  > div.postmetadata a,
+.entry-dark-blue  > div.postmetadata a:active,
+.entry-dark-blue  > div.postmetadata a:visited  {
+	color: #aaaaaa;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+.entry-dark-blue  > div.postmetadata a:hover  {
+	color: #999999;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+/* single entry */
+
+.article {
+    display: block;
+    width: auto;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 0px 10px;
+}
+
+.article-header {
+	display: block;
+	width: auto;
+	background: #2a6774;
+	color: #ffffff;
+	min-height: 100px;
+	padding: 10px 10px 10px 10px;
+	position: relative;
+}
+
+.article a, .article a:active, .article a:visited, .article a:hover {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.article-header .article-author {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.article .postmetadata {
+	font-size: 12px;
+	display: block;
+}
+
+/* page navigation */
+.content-grid .navigation {
+	display: table;
+	width: 100%;
+	margin: 0px 20px 20px 0px;
+	padding: 10px;
+	min-height: 200px;
+	height: 200px;
+	background: #3b3c4b;
+	border: none;
+	box-shadow: #8a8b8b;
+	position: relative;
+	color: #ffffff;
+	box-shadow: 1px 1px #8a8b8b;
+}
+
+.content-grid .navigation a, 
+.content-grid .navigation a:active,
+.content-grid .navigation a:visited {
+	color: #999999;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+.content-grid .navigation a:hover {
+	color: #ffffff;
+}
+
+/* left panel */
+.left-panel {
+	display: table-cell;
+	box-sizing: border-box;
+	height: auto;
+	width: 300px;
+	padding-right: 10px;
+	vertical-align: top;
+}
+
+/* menu */
+.main-menu {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.main-menu .menu > ul,
+.main-menu ul.menu {
+    display: block;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.main-menu .menu > ul > li,
+.main-menu  ul.menu > li.menu-item {
+    display: table-cell;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    vertical-align: middle;
+    min-height: 50px;
+}
+
+.main-menu .menu > ul > li > a,
+.main-menu .menu > ul > li > a:active,
+.main-menu .menu > ul > li > a:visited,
+.main-menu ul.menu > li.menu-item  a,
+.main-menu ul.menu > li.menu-item  a:active,
+.main-menu ul.menu > li.menu-item  a:visited
+{
+    display: block;
+    width: 100%;
+    color: #3b3c4b;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px; 
+    border-bottom: solid 1px #3b3c4b;
+    position: relative;
+
+}
+
+.main-menu .menu > ul > li > a:after{
+    content:'';
+    width:5px;
+    height:5px;
+    background:#fff;
+    position:absolute;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    bottom: -4px;
+    left:146px;
+    border-right:#000 solid 1px;
+    border-bottom:#000 solid 1px;
+} 
+
+.main-menu .menu > ul > li > a:hover,
+.main-menu ul.menu > li.menu-item > a:hover{
+	font-weight: bolder;
+	text-shadow: 1px 1px #ebebed;
+}
+
+/* --- 2nd menu level ---*/
+
+.main-menu .menu > ul > li > ul.children,
+.main-menu ul.menu > li.menu-item > ul.sub-menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu .menu > ul > li > ul.children > li,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    width: 100%;
+    list-style-type: none;
+    font-size: 13px;
+    /* background-color: #2a6774; */
+    background: #ebebed;
+}
+
+/* ... to display the 2nd level menu ... */
+.main-menu .menu > ul > li:hover > ul.children,
+.main-menu ul.menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+
+.main-menu .menu > ul > li > ul.children > li > a,
+.main-menu .menu > ul > li > ul.children > li > a:active,
+.main-menu .menu > ul > li > ul.children > li > a:visited, 
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:active,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #2d2e2f;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-menu .menu > ul > li > ul.children > li > a:hover,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #2d2e2f;
+    text-shadow: 1px 1px #9d9e9f;
+    /* background-color: #eacf2c; */
+}
+
+/* --- 3rd level menu -- */
+
+.main-menu .menu > ul > li > ul.children > li > ul.children, 
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu {
+    display: none;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    width: 100%;
+    list-style-type: none;
+    font-size: 12px;
+    background-color: #fbfbfd;
+    position: relative;
+}
+
+.main-menu .menu > ul > li > ul.children > li:hover > ul.children,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a,
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:active,
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:visited,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:active,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #2d2e2f;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:hover,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #2d2e2f;
+    background-color: #9d9e9f;
+
+}
+
+
+
+
+
+
+
