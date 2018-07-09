@@ -36,4 +36,51 @@ function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 
+// register footer widgets zones
+add_action( 'widgets_init', 'grid_never_widgets_init' );
+
+function grid_never_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Left Footer Zone', 'grid-never-theme' ),
+        'id'            => 'footer-wigdets-zone-1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Center Footer Zone', 'grid-never-theme' ),
+        'id'            => 'footer-wigdets-zone-2',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Right Footer Zone', 'grid-never-theme' ),
+        'id'            => 'footer-wigdets-zone-3',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Header Zone', 'grid-never-theme' ),
+        'id'            => 'header-wigdets-zone-1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );    
+    register_sidebar( array(
+        'name'          => __( 'Header Info Zone', 'grid-never-theme' ),
+        'id'            => 'header-wigdets-zone-2',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );    
+
+}
+
 ?>

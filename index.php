@@ -14,9 +14,7 @@
 
 	<!-- content panel -->
 	<div class="content">
-		<!-- header of the site -->
-		<div class="content-header">
-		</div>
+		
 
 		<!-- posts links region - grid -->
 		<div class="content-grid">

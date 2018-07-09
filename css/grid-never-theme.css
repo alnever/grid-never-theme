@@ -9,6 +9,7 @@
 
 body {
 	font-family: sans-serif;
+	background: #161718;
 }
 
 h1 {
@@ -57,6 +58,52 @@ img {
     float: left;
 }
 
+a, a:active, a:visited {
+	color: #2a6774;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #49aabf;
+	text-decoration: underline;
+}
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    border: solid 1px #eacf2c;
+    padding: 10px 0px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    font-family: courier;
+    font-size: 14px;
+    color: #000000;
+    
+}
+
+/* table */
+
+table {
+    width: 100%;
+}
+
+td, tr {
+    height: 40px;
+}
+
+tr > * {
+    border-bottom: solid 1px #3b3c4b;
+}
+
+th {
+    font-weight: bolder;
+}
+
 
 /* structure */
 
@@ -64,21 +111,27 @@ img {
 	width: 80%;
 	min-width: 1024px;
 	margin: 0 auto;
+	background: #FFFFFF;
+	padding: 3px 3px 3px 3px;
 }
 
 
 .container {
 	display:table;
+	width: 100%;
 }
 
 .content {
 	display: block;
-	width: auto;
+	width: 100%;
+	margin-top: 30px;
 }
 
 .content-grid {
 	column-count: 4;
+	width: 100%;
 }
+
 
 /* articles */
 
@@ -183,15 +236,17 @@ img {
 .article-header {
 	display: block;
 	width: auto;
-	background: #2a6774;
-	color: #ffffff;
+	color: #2a6774;
 	min-height: 100px;
 	padding: 10px 10px 10px 10px;
 	position: relative;
+	border-bottom: solid 1px #2a6774;
 }
 
-.article a, .article a:active, .article a:visited, .article a:hover {
-	color: #eaeaea;
+.article-header a, 
+.article-header a:active, 
+.article-header a:visited, 
+.article-header a:hover {
 	text-decoration: none;
 }
 
@@ -200,6 +255,25 @@ img {
 	position: absolute;
 	bottom: 0px;
 }
+
+.article-header .article-author a {
+	text-decoration: underline;
+}
+
+.article-header:after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    bottom: -4px;
+    right: 146px;
+    border-right: #2a6774 solid 1px;
+    border-bottom: #2a6774 solid 1px;
+} 
 
 .article .postmetadata {
 	font-size: 12px;
@@ -246,10 +320,12 @@ img {
 
 /* menu */
 .main-menu {
-	display: block;
+	display: table;
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .main-menu .menu > ul,
@@ -287,19 +363,20 @@ img {
 
 }
 
+.main-menu ul.menu > li.menu-item  a:after,
 .main-menu .menu > ul > li > a:after{
-    content:'';
-    width:5px;
-    height:5px;
-    background:#fff;
-    position:absolute;
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    transform:rotate(45deg);
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     bottom: -4px;
-    left:146px;
-    border-right:#000 solid 1px;
-    border-bottom:#000 solid 1px;
+    left: 146px;
+    border-right: #3b3c4b solid 1px;
+    border-bottom: #3b3c4b solid 1px;
 } 
 
 .main-menu .menu > ul > li > a:hover,
@@ -400,8 +477,148 @@ img {
 }
 
 
+/* footer */
+
+.footer {
+	display: block;
+	width: auto;
+	min-height: 100px;
+	padding: 20px 20px 20px 20px;
+	font-size: 12px;
+	color: #3b3c4b;
+	border-top: solid 1px #3b3c4b;
+	background-image: url(../img/apple-keyboard-buttons-computer-34490.jpg);
+	background-position: bottom;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.footer a, 
+.footer a:active, 
+.footer a:visited, 
+.footer a:hover {
+	color: #3b3c4b;
+	text-decoration: underline;
+}
+
+.footer-widgets {
+	display: inline-flex;
+	width: 100%;
+	min-height: 200px;
+	max-height: 400px;
+	padding: 20px 20px 20px 20px;
+	font-size: 12px;
+	color: #3b3c4b;
+	border-top: solid 1px #3b3c4b;
+}
+
+.footer-widgets a, 
+.footer-widgets a:active, 
+.footer-widgets a:visited {
+	color: #3b3c4b;
+	text-decoration: underline;
+}
+
+.footer-widgets a:hover {
+	color: #49aabf;
+}
+
+.footer-widgets .footer-wigdets-zone {
+	display: table-cell;
+	float: left;
+	min-width: 33%;
+	height: auto;
+	padding: 20px 20px 20px 20px;
+}
+
+div.footer-widgets .footer-wigdets-zone:nth-child(2) {
+	border-left: solid 1px #3b3c4b;
+	border-right: solid 1px #3b3c4b;
+}
+
+/* footer widgets */
+div.footer-widgets .widget_archive ul,
+div.footer-widgets .widget_categories ul {
+	padding-left: 0px;
+}
+
+div.footer-widgets .widget_archive ul li,
+div.footer-widgets .widget_categories ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+div.footer-widgets .widget_archive ul li:after,
+div.footer-widgets .widget_categories ul li:after {
+	content: " | ";
+}
 
 
 
+/* header */
+.header {
+	display: block;
+	width: 100%;
+	min-height: 300px;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	font-size: 12px;
+	color: #161718;
+	background-image: url(../img/apple-keyboard-buttons-computer-34490.jpg);
+	background-position: top;
+	background-repeat: none;
+	background-size: cover;
+}
 
+.header .header-info {
+	display: block;
+	float:left;
+	width: 30%;
+	background: #eaeaea;
+	opacity: 0.7;
+	padding: 10px 10px 10px 10px;
+}
+
+.header .header-info h1 {
+	display: block;
+	width: auto;
+	color: #161718;
+	padding: 0px 0px 10px 0px;
+	border-bottom: solid 1px #161718;
+}
+
+.header .header-info h1 a,
+.header .header-info h1 a:active,
+.header .header-info h1 a:visited,
+.header .header-info h1 a:hover  {
+	color: #161718;
+	text-decoration: none;
+}
+
+.header .header-info .description {
+	display: none;
+	width: auto;
+	color: #161718;
+}
+
+.header .header-info:hover {
+	min-height: 372px;
+}
+
+.header .header-info:hover .description {
+	display: block;
+}
+
+.header .header-widgets {
+	display: block;
+	width: 25%;
+	min-width: 300px;
+	float: right;
+	background: #eaeaea;
+	opacity: 0.7;
+	padding: 10px 10px 10px 10px;
+	min-height: 372px;
+	max-height: 372px;
+
+}
 

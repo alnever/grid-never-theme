@@ -23,3 +23,22 @@
     </head>
 <body> <!-- must be closed in footer.php -->
     <div class="wrapper"> <!-- must be closed in footer.php -->
+    <!-- header of the site -->
+    <div class="header">
+        <div class="header-info">
+            <h1>
+                <a href="<?php _e(get_bloginfo('wpurl')); ?>" title="<?php _e(get_bloginfo('name')); ?>">
+                    <?php _e(get_bloginfo('name')); ?>
+                </a>
+            </h1>
+            <p class="description">
+                <?php _e(get_bloginfo('description')); ?>
+            </p>
+            <div class="header-info-widget">
+                <?php dynamic_sidebar("header-wigdets-zone-2"); ?>
+            </div>
+        </div>
+        <div class="header-widgets">
+            <?php dynamic_sidebar("header-wigdets-zone-1"); ?>
+        </div>
+    </div>
