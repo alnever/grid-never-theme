@@ -2,4 +2,193 @@
 	.footer-widgets {
 		display: block;
 	}
+
+	.left-panel {
+		padding-right: 0px;
+	}
+
+	.header {
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer-widgets,
+	.footer-widgets .footer-widgets-zone,
+	div.footer-widgets .footer-wigdets-zone:nth-child(2) {
+		border: none;
+	}
+
+	.content-grid {
+		column-count: 1;
+	}
+
+	/* menu */
+	.mobile-main-menu {
+		display: block;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+
+	.mobile-main-menu .menu > ul,
+	.mobile-main-menu ul.menu {
+	    display: none;
+	    margin-top: 0px;
+	    padding-left: 0px;
+	    margin-bottom: 0px;
+	}
+
+	.mobile-main-menu:hover .menu > ul,
+	.mobile-main-menu:hover ul.menu {
+	    display: block;
+	}
+
+	.mobile-main-menu .menu > ul > li,
+	.mobile-main-menu  ul.menu > li.menu-item {
+	    display: table-cell;
+	    width: 100%;
+	    float: left;
+	    font-size: 14px;
+	    vertical-align: middle;
+	    min-height: 30px;
+	}
+
+	.mobile-main-menu .mobile-menu-start {
+		min-height: 30px;
+	}
+
+	.mobile-main-menu .menu > ul > li > a,
+	.mobile-main-menu .menu > ul > li > a:active,
+	.mobile-main-menu .menu > ul > li > a:visited,
+	.mobile-main-menu ul.menu > li.menu-item  a,
+	.mobile-main-menu ul.menu > li.menu-item  a:active,
+	.mobile-main-menu ul.menu > li.menu-item  a:visited,
+	.mobile-main-menu .mobile-menu-start 
+	{
+	    display: block;
+	    width: 100%;
+	    color: #3b3c4b;
+	    text-decoration: none;
+	    padding: 10px 10px 10px 10px; 
+	    border-bottom: solid 1px #3b3c4b;
+	    position: relative;
+
+	}
+
+	.mobile-main-menu .menu > ul > li > a:after,
+	.mobile-main-menu ul.menu > li.menu-item a:after,
+	.mobile-main-menu .mobile-menu-start:after{
+	    content:'';
+	    width:5px;
+	    height:5px;
+	    background:#fff;
+	    position:absolute;
+	    -moz-transform:rotate(45deg);
+	    -webkit-transform:rotate(45deg);
+	    transform:rotate(45deg);
+	    bottom: -4px;
+	    left:146px;
+	    border-right:#3b3c4b solid 1px;
+	    border-bottom:#3b3c4b solid 1px;
+	} 
+
+	.mobile-main-menu .menu > ul > li > a:hover,
+	.mobile-main-menu ul.menu > li.menu-item > a:hover{
+		font-weight: bolder;
+		text-shadow: 1px 1px #ebebed;
+	}
+
+	/* --- 2nd menu level ---*/
+
+	.mobile-main-menu .menu > ul > li > ul.children,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu {
+	    display: none;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li {
+	    display: block;
+	    float:none;
+	    width: 100%;
+	    list-style-type: none;
+	    font-size: 13px;
+	    /* background-color: #2a6774; */
+	    background: #ebebed;
+	}
+
+	/* ... to display the 2nd level menu ... */
+	.mobile-main-menu .menu > ul > li:hover > ul.children,
+	.mobile-main-menu ul.menu > li.menu-item:hover > ul.sub-menu {
+	    display: block;
+	}
+
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > a,
+	.mobile-main-menu .menu > ul > li > ul.children > li > a:active,
+	.mobile-main-menu .menu > ul > li > ul.children > li > a:visited, 
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li > a,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:active,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:visited {
+	    display: block;
+	    color: #2d2e2f;
+	    text-decoration: none;
+	    padding: 10px 10px 10px 10px;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > a:hover,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:hover {
+	    color: #2d2e2f;
+	    text-shadow: 1px 1px #9d9e9f;
+	    /* background-color: #eacf2c; */
+	}
+
+	/* --- 3rd level menu -- */
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children, 
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu {
+	    display: none;
+	    top: 0px;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children > li,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li {
+	    display: block;
+	    float:none;
+	    width: 100%;
+	    list-style-type: none;
+	    font-size: 12px;
+	    background-color: #fbfbfd;
+	    position: relative;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li:hover > ul.children,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item:hover > ul.sub-menu {
+	    display: block;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children > li > a,
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children > li > a:active,
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children > li > a:visited,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:active,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:visited {
+	    display: block;
+	    color: #2d2e2f;
+	    text-decoration: none;
+	    padding: 10px 10px 10px 10px;
+	}
+
+	.mobile-main-menu .menu > ul > li > ul.children > li > ul.children > li > a:hover,
+	.mobile-main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:hover {
+	    color: #2d2e2f;
+	    background-color: #9d9e9f;
+
+	}
+
 }
