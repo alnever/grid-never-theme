@@ -10,7 +10,8 @@
         <!-- styles -->
         <link rel="stylesheet" id="main-style-sheet" href="<?php _e(bloginfo('stylesheet_url')); ?>" type="text/css" media="all" />
         <link rel="stylesheet" id="grid-style-sheet" href="<?php _e(bloginfo('template_url')); ?>/css/grid-never-theme.css" type="text/css" media="all" />
-        <link rel="stylesheet" id="mobile-style-sheet" href="<?php _e(bloginfo('template_url')); ?>/css/mobile.css" type="text/css" media="screen and (max-width:600px)" />
+        <link rel="stylesheet" id="grid-style-sheet-middle" href="<?php _e(bloginfo('template_url')); ?>/css/grid-never-theme-middle.css" type="text/css" media="screen and (max-width:1024px)" />
+        <link rel="stylesheet" id="grid-style-sheet-small" href="<?php _e(bloginfo('template_url')); ?>/css/grid-never-theme-small.css" type="text/css" media="screen and (max-width:600px)" />
         
         <!-- title -->
         <title><?php _e(strip_tags(get_the_title()), 'grid-never-theme'); ?><?php _e(bloginfo('name'), 'grid-never-theme'); ?></title>

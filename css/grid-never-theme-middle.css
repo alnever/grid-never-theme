@@ -1,0 +1,202 @@
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		min-width: 100%;
+	}
+
+	.header,
+	.footer 
+	{
+		background-image: none;
+		min-height: 50px;
+	}
+
+	.header .header-widgets {
+		display: none;
+	}
+
+	.header .header-info {
+		width: 100%;
+	}
+
+	.header .header-info:hover {
+		min-height: auto;
+	}
+
+	.header .header-info:hover .description {
+		display: none;
+	}
+
+	.footer-widgets {
+		min-height: auto;
+		max-height: 100%;
+		height: auto;
+	}
+
+	.content-grid {
+		column-count: 1;
+	}
+
+	.left-panel {
+		display: block;
+		width: 100%;
+	}
+
+	/* Header menu */
+.header_menu {
+    display: table;
+    width: 100%;
+    background: #394400;
+}
+
+.mobile_header_menu {
+    display: none;
+}
+
+/* --- 1st menu level ---*/
+
+.main-menu .menu > ul,
+.main-menu ul.menu {
+    margin-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.main-menu .menu > ul > li,
+.main-menu  ul.menu > li.menu-item {
+    display: block;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    width: auto;
+    background-color: #161718;
+    min-height: auto;
+}
+
+.main-menu .menu > ul > li > a,
+.main-menu .menu > ul > li > a:active,
+.main-menu .menu > ul > li > a:visited,
+.main-menu ul.menu > li.menu-item  a,
+.main-menu ul.menu > li.menu-item  a:active,
+.main-menu ul.menu > li.menu-item  a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px; 
+    border: none;
+}
+
+.main-menu .menu > ul > li > a:hover,
+.main-menu ul.menu > li.menu-item > a:hover{
+    color: #FFFFFF;
+    background-color: #2a6774;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.main-menu .menu > ul > li > a:after,
+.main-menu ul.menu > li.menu-item > a:after{
+	display: none;
+}
+
+/* --- 2nd menu level ---*/
+
+.main-menu .menu > ul > li > ul.children,
+.main-menu ul.menu > li.menu-item > ul.sub-menu {
+    display: none;
+    position:absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu .menu > ul > li > ul.children > li,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    max-width: 250px;
+    width: 250px;
+    list-style-type: none;
+    font-size: 14px;
+    background-color: #ce9b00;
+    position: relative;
+}
+
+/* ... to display the 2nd level menu ... */
+.main-menu .menu > ul > li:hover > ul.children,
+.main-menu ul.menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+
+.main-menu .menu > ul > li > ul.children > li > a,
+.main-menu .menu > ul > li > ul.children > li > a:active,
+.main-menu .menu > ul > li > ul.children > li > a:visited, 
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:active,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-menu .menu > ul > li > ul.children > li > a:hover,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #fed148;
+    background-color: #005b0b;
+}
+
+.main-menu .menu > ul > li > ul.children > li.page_item_has_children > a:hover::after,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item-has-children > a:hover::after{
+    content: " >> ";
+}
+
+/* --- 3rd level menu -- */
+
+.main-menu .menu > ul > li > ul.children > li > ul.children, 
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu {
+    display: none;
+    position:absolute;
+    left: 250px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li {
+    display: block;
+    float:none;
+    max-width: 250px;
+    width: 250px;
+    list-style-type: none;
+    font-size: 12px;
+    background-color: #d2a519;
+    position: relative;
+}
+
+.main-menu .menu > ul > li > ul.children > li:hover > ul.children,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item:hover > ul.sub-menu {
+    display: block;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a,
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:active,
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:visited,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:active,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:visited {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.main-menu .menu > ul > li > ul.children > li > ul.children > li > a:hover,
+.main-menu ul.menu > li.menu-item > ul.sub-menu > li.menu-item > ul.sub-menu > li > a:hover {
+    color: #fed148;
+    background-color: #005b0b;
+}
+
+
+}

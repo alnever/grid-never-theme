@@ -12,7 +12,7 @@
 
 	<!-- page content -->
 	<?php
-		get_template_part('grid','content');
+		get_template_part('grid','archive');
 	?>
 
 </div>

@@ -80,7 +80,7 @@ function grid_never_widgets_init() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );    
-
 }
+
 
 ?>
